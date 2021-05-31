@@ -2,7 +2,7 @@
     <img src="<?php /* @escapeNotVerified */ echo $block->getQRCodeUrl(); ?>" alt="Lof Authenticator">
     <div class="block block-customer-login" style="width: 48%">
         <div class="block-content">
-            <form class="form contact" action="<?php /* @escapeNotVerified */ echo $block->getFormAction(); ?>" method="post" data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>">
+            <form class="form auth-setup" action="<?php /* @escapeNotVerified */ echo $block->getFormAction(); ?>" method="post" data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>">
                 <input type="hidden" name="secret" value="<?php /* @escapeNotVerified */ echo $block->getSecretCode(); ?>" />
                 <fieldset class="fieldset">
                     <legend class="legend"><span><?php /* @escapeNotVerified */ echo __('Google 2Step Authentication') ?></span></legend><br />

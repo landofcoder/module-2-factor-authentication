@@ -105,7 +105,6 @@ class Authentication extends \Magento\Backend\App\Action\Plugin\Authentication
             $user = $this->_auth->getUser();
             $secretKey = isset($user['secret_key']) ? $user['secret_key'] : '';
             $qrCode = isset($postLogin['qr_code']) ? $postLogin['qr_code'] : '';
-
             $outputValue = (int) $this->_authenticateQRCode($secretKey, $qrCode);
 
             if (!$outputValue) {
