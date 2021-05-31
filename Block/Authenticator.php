@@ -1,14 +1,28 @@
 <?php
 /**
- * Authenticator Block to generate and authenticate QR Code for Demo
+ * Landofcoder
  *
- * @author     Shyam Kumar <kumar.30.shyam@gmail.com>
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Landofcoder.com license that is
+ * available through the world-wide-web at this URL:
+ * https://landofcoder.com/terms
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category   Landofcoder
+ * @package    Lof_Authenticator
+ * @copyright  Copyright (c) 2021 Landofcoder (https://www.landofcoder.com/)
+ * @license    https://landofcoder.com/terms
  */
-namespace Neyamtux\Authenticator\Block;
+namespace Lof\Authenticator\Block;
 
 use Magento\Catalog\Model\Session;
 use Magento\Framework\View\Element\Template\Context;
-use Neyamtux\Authenticator\Lib\PHPGangsta\GoogleAuthenticator;
+use Lof\Authenticator\Lib\PHPGangsta\GoogleAuthenticator;
 
 class Authenticator extends \Magento\Framework\View\Element\Template
 {
@@ -109,7 +123,7 @@ class Authenticator extends \Magento\Framework\View\Element\Template
      */
     public function getQRCodeUrl()
     {
-        return $this->_googleAuthenticator->getQRCodeGoogleUrl('Neyamtux Authenticator', $this->_googleSecret);
+        return $this->_googleAuthenticator->getQRCodeGoogleUrl('Lof Authenticator', $this->_googleSecret);
     }
 
     /**

@@ -1,15 +1,29 @@
 <?php
 /**
- * User page left menu
+ * Landofcoder
  *
- * @author     Shyam Kumar <kumar.30.shyam@gmail.com>
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Landofcoder.com license that is
+ * available through the world-wide-web at this URL:
+ * https://landofcoder.com/terms
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category   Landofcoder
+ * @package    Lof_Authenticator
+ * @copyright  Copyright (c) 2021 Landofcoder (https://www.landofcoder.com/)
+ * @license    https://landofcoder.com/terms
  */
-namespace Neyamtux\Authenticator\Block\Adminhtml\User\Edit;
+namespace Lof\Authenticator\Block\Adminhtml\User\Edit;
 
 use Magento\Backend\Block\Template\Context;
 use Magento\Backend\Model\Auth\Session;
 use Magento\Framework\Json\EncoderInterface;
-use Neyamtux\Authenticator\Helper\Data;
+use Lof\Authenticator\Helper\Data;
 
 class Tabs extends \Magento\User\Block\User\Edit\Tabs
 {
@@ -51,7 +65,7 @@ class Tabs extends \Magento\User\Block\User\Edit\Tabs
                 [
                     'label' => __('Authentication'),
                     'title' => __('Authentication'),
-                    'content' =>$this->getLayout()->createBlock('Neyamtux\Authenticator\Block\Adminhtml\User\Edit\Tab\Authentication')->toHtml()
+                    'content' =>$this->getLayout()->createBlock('Lof\Authenticator\Block\Adminhtml\User\Edit\Tab\Authentication')->toHtml()
                 ],
                 'roles_section'
             );

@@ -1,10 +1,24 @@
 <?php
 /**
- * Admin login authentication
+ * Landofcoder
  *
- * @author     Shyam Kumar <kumar.30.shyam@gmail.com>
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Landofcoder.com license that is
+ * available through the world-wide-web at this URL:
+ * https://landofcoder.com/terms
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category   Landofcoder
+ * @package    Lof_Authenticator
+ * @copyright  Copyright (c) 2021 Landofcoder (https://www.landofcoder.com/)
+ * @license    https://landofcoder.com/terms
  */
-namespace Neyamtux\Authenticator\App\Action\Plugin;
+namespace Lof\Authenticator\App\Action\Plugin;
 
 use Magento\Backend\App\BackendAppList;
 use Magento\Backend\Model\Auth;
@@ -15,8 +29,8 @@ use Magento\Framework\App\ResponseInterface;
 use Magento\Framework\Controller\Result\RedirectFactory;
 use Magento\Framework\Data\Form\FormKey\Validator;
 use Magento\Framework\Message\ManagerInterface;
-use Neyamtux\Authenticator\Helper\Data;
-use Neyamtux\Authenticator\Lib\PHPGangsta\GoogleAuthenticator;
+use Lof\Authenticator\Helper\Data;
+use Lof\Authenticator\Lib\PHPGangsta\GoogleAuthenticator;
 
 class Authentication extends \Magento\Backend\App\Action\Plugin\Authentication
 {

@@ -8,7 +8,7 @@
  *
  * @link http://www.phpgangsta.de/
  */
-namespace Neyamtux\Authenticator\Lib\PHPGangsta;
+namespace Lof\Authenticator\Lib\PHPGangsta;
 
 class GoogleAuthenticator
 {

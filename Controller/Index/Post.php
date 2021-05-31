@@ -1,10 +1,24 @@
 <?php
 /**
- * Authenticator Demo Post Controller
+ * Landofcoder
  *
- * @author     Shyam Kumar <kumar.30.shyam@gmail.com>
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Landofcoder.com license that is
+ * available through the world-wide-web at this URL:
+ * https://landofcoder.com/terms
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category   Landofcoder
+ * @package    Lof_Authenticator
+ * @copyright  Copyright (c) 2021 Landofcoder (https://www.landofcoder.com/)
+ * @license    https://landofcoder.com/terms
  */
-namespace Neyamtux\Authenticator\Controller\Index;
+namespace Lof\Authenticator\Controller\Index;
 
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\View\LayoutFactory;
@@ -44,7 +58,7 @@ class Post extends \Magento\Framework\App\Action\Action
             return;
         }
 
-        $authenticator = $this->_layoutFactory->create()->createBlock('Neyamtux\Authenticator\Block\Authenticator');
+        $authenticator = $this->_layoutFactory->create()->createBlock('Lof\Authenticator\Block\Authenticator');
         if ($authenticator->authenticateQRCode($post['secret'], $post['code'])) {
             $this->messageManager->addSuccess(
                 __('Successfully Authenticated. Cheers...')

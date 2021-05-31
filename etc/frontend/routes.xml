@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
         <route id="authenticator" frontName="authenticator">
-            <module name="Neyamtux_Authenticator"/>
+            <module name="Lof_Authenticator"/>
         </route>
     </router>
 </config>

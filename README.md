@@ -19,7 +19,7 @@ You can protect our store from these type of attacks by using our advanced Magen
 
 ```
 composer require juashyam/authenticator
-php bin/magento module:enable Neyamtux_Authenticator
+php bin/magento module:enable Lof_Authenticator
 php bin/magento setup:upgrade
 ```
 
